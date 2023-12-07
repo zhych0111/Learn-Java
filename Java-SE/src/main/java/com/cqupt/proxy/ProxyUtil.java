@@ -13,9 +13,9 @@ public class ProxyUtil {
                     @Override
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                         if (method.getName().equals("run")) {
-                            System.out.println("打火！");
+                            System.out.println("打火！！！");
                             String s = (String) method.invoke(car, args);
-                            System.out.println("刹车！");
+                            System.out.println("刹车！！！");
                             return s;
                         }
                         return "";
