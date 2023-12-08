@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Java-SE/pom.xml" />
+        <option value="$PROJECT_DIR$/Algorithm/pom.xml" />
       </list>
     </option>
   </component>
