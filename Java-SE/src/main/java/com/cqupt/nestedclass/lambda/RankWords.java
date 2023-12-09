@@ -1,4 +1,4 @@
-package com.cqupt.lambda;
+package com.cqupt.nestedclass.lambda;
 
 import java.util.Arrays;
 
