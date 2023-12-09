@@ -1,5 +1,4 @@
 package com.cqupt.multithread.thread_pool;
-
 import java.util.concurrent.*;
 
 public class ThreadPoolTest2 {
