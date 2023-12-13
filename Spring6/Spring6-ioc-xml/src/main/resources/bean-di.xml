@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tool="http://www.springframework.org/schema/tool"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd">
+    <!--    set 方法注入-->
+    <bean id="book" class="com.cqupt.spirng6.iocxml.di.Book">
+        <property name="bname" value="前端开发"/>
+        <property name="author" value="zyc"/>
+        <property name="others">
+            <null/>
+        </property>
+    </bean>
+    <!--    构造器注入-->
+    <bean id="bookCon" class="com.cqupt.spirng6.iocxml.di.Book">
+        <constructor-arg name="bname" value="java开发"/>
+        <constructor-arg name="author" value="zyc"/>
+        <constructor-arg name="others">
+            <value><![CDATA[a < b]]></value>
+        </constructor-arg>
+    </bean>
+</beans>

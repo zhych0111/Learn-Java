@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dept" class="com.cqupt.spirng6.iocxml.ditest.Dept">
+        <property name="dname" value="技术部"/>
+        <property name="empList">
+            <list>
+                <ref bean="emp1"/>
+                <ref bean="emp2"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="emp1" class="com.cqupt.spirng6.iocxml.ditest.Emp">
+        <!--        普通属性注入-->
+        <property name="ename" value="lucy"/>
+        <property name="age" value="20"/>
+        <!--        注入对象类型属性 ref表示引用-->
+<!--        <property name="dept" ref="dept"/>-->
+    </bean>
+    <bean id="emp2" class="com.cqupt.spirng6.iocxml.ditest.Emp">
+        <!--        普通属性注入-->
+        <property name="ename" value="tom"/>
+        <property name="age" value="40"/>
+        <!--        注入对象类型属性 ref表示引用-->
+<!--        <property name="dept" ref="dept"/>-->
+    </bean>
+</beans>

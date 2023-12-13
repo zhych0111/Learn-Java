@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    1 创建三个对象-->
+<!--    2 注入普通类型属性-->
+<!--    3 使用 util：类型 定义-->
+<!--    4 在学生bean中引入util: 类型定义bean，完成list，map类型属性的注入-->
+    <bean id="lesson1" class="com.cqupt.spirng6.iocxml.dimap.Lesson">
+        <property name="lessonName" value="Java开发"/>
+    </bean>
+    <bean id="lesson2" class="com.cqupt.spirng6.iocxml.dimap.Lesson">
+        <property name="lessonName" value="Python开发"/>
+    </bean>
+    <bean id="teacher1" class="com.cqupt.spirng6.iocxml.dimap.Teacher">
+        <property name="teacherId" value="100"/>
+        <property name="teacherName" value="Java老师"/>
+    </bean>
+    <bean id="teacher2" class="com.cqupt.spirng6.iocxml.dimap.Teacher">
+        <property name="teacherId" value="101"/>
+        <property name="teacherName" value="数学老师"/>
+    </bean>
+    <bean id="student" class="com.cqupt.spirng6.iocxml.dimap.Student">
+        <property name="sid" value="10000"/>
+        <property name="sname" value="lucy"/>
+<!--        注入list和map类型属性-->
+        <property name="lessonList" ref="lessonList"/>
+        <property name="teacherMap" ref="teacherMap"/>
+    </bean>
+    <util:list id="lessonList">
+        <ref bean="lesson1"/>
+        <ref bean="lesson2"/>
+    </util:list>
+    <util:map id="teacherMap">
+        <entry>
+            <key>
+                <value>10010</value>
+            </key>
+            <ref bean="teacher1"/>
+        </entry>
+        <entry>
+            <key>
+                <value>10086</value>
+            </key>
+            <ref bean="teacher2"/>
+        </entry>
+    </util:map>
+
+<!--    p命名空间注入-->
+    <bean id="studentp" class="com.cqupt.spirng6.iocxml.dimap.Student" p:sid="10099" p:sname="mary" p:lessonList-ref="lessonList" p:teacherMap-ref="teacherMap"/>
+</beans>

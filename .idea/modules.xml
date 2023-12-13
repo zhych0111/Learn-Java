@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Learn-Java.iml" filepath="$PROJECT_DIR$/.idea/Learn-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring6-ioc-xml.iml" filepath="$PROJECT_DIR$/Spring6-ioc-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-first.iml" filepath="$PROJECT_DIR$/spring-first.iml" />
     </modules>
   </component>
 </project>
