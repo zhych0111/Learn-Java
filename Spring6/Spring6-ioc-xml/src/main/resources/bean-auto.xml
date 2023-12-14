@@ -6,9 +6,9 @@
 <!--    <bean id="userController" class="com.cqupt.spirng6.iocxml.auto.controller.UserController" autowire="byType"></bean>-->
 <!--    <bean id="userService" class="com.cqupt.spirng6.iocxml.auto.service.UserServiceImpl" autowire="byType"></bean>-->
 <!--    <bean id="userDao" class="com.cqupt.spirng6.iocxml.auto.dao.UserDaoImpl"></bean>-->
-    <bean id="userController" class="com.cqupt.spirng6.iocxml.auto.controller.UserController" autowire="byName"></bean>
-    <bean id="userService" class="com.cqupt.spirng6.iocxml.auto.service.UserServiceImpl" autowire="byName"></bean>
-    <bean id="userDao" class="com.cqupt.spirng6.iocxml.auto.dao.UserDaoImpl"></bean>
+    <bean id="userController" class="com.cqupt.spirng6.iocxml.auto.controller.UserController" autowire="byName"/>
+    <bean id="userService" class="com.cqupt.spirng6.iocxml.auto.service.UserServiceImpl" autowire="byName"/>
+    <bean id="userDao" class="com.cqupt.spirng6.iocxml.auto.dao.UserDaoImpl"/>
 
 
 </beans>

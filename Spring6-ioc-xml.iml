@@ -6,6 +6,9 @@
         <fileset id="fileset" name="Bean Factorybean" removed="false">
           <file>file://$MODULE_DIR$/Spring6/Spring6-ioc-xml/src/main/resources/bean-factorybean.xml</file>
         </fileset>
+        <fileset id="fileset2" name="Bean Auto" removed="false">
+          <file>file://$MODULE_DIR$/Spring6/Spring6-ioc-xml/src/main/resources/bean-auto.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
