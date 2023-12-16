@@ -1,7 +1,6 @@
-package com.cqupt.spring6.autowired.controller;
+package com.cqupt.spring6.resource.controller;
 
-import com.cqupt.spring6.autowired.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.cqupt.spring6.resource.service.UserService;
 import org.springframework.stereotype.Controller;
 
 @Controller
