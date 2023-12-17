@@ -11,6 +11,7 @@
         <module name="Algorithm" />
         <module name="Spring6-ioc-annotation" />
         <module name="spring-first" />
+        <module name="Spring6-reflect" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
