@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Java-SE" />
-        <module name="Spring6-ioc-xml" />
-        <module name="Algorithm" />
         <module name="Spring6-ioc-annotation" />
+        <module name="Spring6-ioc-xml" />
+        <module name="cqupt-spring" />
+        <module name="Algorithm" />
         <module name="spring-first" />
         <module name="Spring6-reflect" />
       </profile>

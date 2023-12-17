@@ -13,6 +13,7 @@
         <module>Spring6-ioc-xml</module>
         <module>Spring6-ioc-annotation</module>
         <module>Spring6-reflect</module>
+        <module>cqupt-spring</module>
     </modules>
 
     <properties>
