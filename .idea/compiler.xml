@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Java-SE" />
         <module name="Spring6-ioc-annotation" />
+        <module name="Spring6-aop" />
+        <module name="Spring6-junit" />
         <module name="Spring6-ioc-xml" />
         <module name="cqupt-spring" />
         <module name="Algorithm" />
